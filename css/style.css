@@ -153,9 +153,9 @@ img {
 
 .cloudssvg {
   opacity: 0;
-  animation: swim 3s ease-in-out alternate infinite;
-  -webkit-animation: swim 3s ease-in-out alternate infinite;
-  -moz-animation: swim 3s ease-in-out  infinite;
+  animation: staranim 3s ease-in-out alternate infinite;
+  -webkit-animation: staranim 3s ease-in-out alternate infinite;
+  -moz-animation: staranim 3s ease-in-out  infinite;
   -webkit-transform-origin: 49% 49%;
           transform-origin: 49% 49%;
   transform-box: fill-box;
@@ -164,24 +164,6 @@ img {
 .cloudssvg:last-child {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
-}
-
-@-webkit-keyframes swim {
-  0% {
-    fill: #fff;
-  }
-  100% {
-    fill: black;
-  }
-}
-
-@keyframes swim {
-  0% {
-    fill: #fff;
-  }
-  100% {
-    fill: black;
-  }
 }
 
 @-webkit-keyframes spin {

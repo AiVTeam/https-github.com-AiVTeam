@@ -128,7 +128,7 @@ img{
     -moz-animation:staranim 3s ease-in-out  infinite;
     transform-origin: 49% 49%;
     transform-box: fill-box;
-    &:last-child;
+    &:last-child
 {
         animation-delay: 1.5s;
     }
