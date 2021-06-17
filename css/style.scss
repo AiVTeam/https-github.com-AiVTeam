@@ -123,46 +123,17 @@ img{
 
 .cloudssvg{
     opacity: 0;
-    animation: swim 8s ease-in-out  infinite;
-    -webkit-animation: swim 8s ease-in-out  infinite;
-    -moz-animation:move 8s ease-in-out  infinite;
+    animation: staranim 3s ease-in-out alternate infinite;
+    -webkit-animation: staranim 3s ease-in-out alternate infinite;
+    -moz-animation:staranim 3s ease-in-out  infinite;
     transform-origin: 49% 49%;
     transform-box: fill-box;
-    &:last-child{
-        animation-delay: 3s;
+    &:last-child;
+{
+        animation-delay: 1.5s;
     }
 }
 
-
-
-@keyframes swim{
-
-    0%{
-        transform: translateX(-100%);
-        -webkit-transform: translateX(-100%);
-        -moz-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-        -o-transform: translateX(-100%);
-        opacity:0;
-}
-
-    10%{
-    
-        opacity:1;
-    }
-
-    75%{
-        opacity:0;
-    }
-
-    100%{
-        transform: translateX(300%);
-        -webkit-transform: translateX(300%);
-        -moz-transform: translateX(300%);
-        -ms-transform: translateX(300%);
-        -o-transform: translateX(300%);
-}
-}
 
 @keyframes spin{
 
