@@ -1,0 +1,503 @@
+//Animate main svg
+// .mainicon{
+//     position: absolute;
+//     right: 0;
+//     width: 100%;
+//     height: 100%;
+//     max-width: 675.51px;
+//   }
+
+// .mainicon-wrap{
+//   height: 0;
+//   padding-top: 100%;
+//   position: relative;
+// }
+
+.circle {
+    animation: boop 2s linear alternate infinite;
+    -webkit-animation: boop 2s linear alternate infinite;
+    -moz-animation: boop 2s linear alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+
+#circle2 {
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+}
+
+#circle3 {
+    animation-duration: 0.5s;
+    animation-delay: 0.4s;
+}
+
+#circle4 {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+#circle5 {
+    animation-duration: 0.7s;
+    animation-delay: 0.1s;
+}
+
+#circle6 {
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+}
+
+#circle7 {
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.gear {
+    animation: spin 3s ease-in-out infinite;
+    -webkit-animation: spin 3s ease-in-out infinite;
+    -moz-animation: spin 3s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+
+.loadsvg {
+    animation: loadsvg 3s linear infinite;
+    -webkit-animation: loadsvg 3s linear infinite;
+    -moz-animation: loadsvg 3s linear infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+}
+
+@keyframes loadsvg {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.graph {
+    animation: movet 3s ease-in-out alternate infinite;
+    -webkit-animation: movet 3s ease-in-out alternate infinite;
+    -moz-animation: movet 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+
+.mansvg {
+    animation: movetwo 3s ease-in-out alternate infinite;
+    -webkit-animation: movetwo 3s ease-in-out alternate infinite;
+    -moz-animation: move 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+
+.left-table-svg {
+    animation: movethree 3s ease-in-out alternate infinite;
+    -webkit-animation: movethree 3s ease-in-out alternate infinite;
+    -moz-animation: movethree 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+
+.stars {
+    animation: staranim 1s linear alternate infinite;
+    -webkit-animation: staranim 1s linear alternate infinite;
+}
+
+.cloudssvg {
+    opacity: 0;
+    animation: staranim 3s ease-in-out alternate infinite;
+    -webkit-animation: staranim 3s ease-in-out alternate infinite;
+    -moz-animation: staranim 3s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+    &:last-child {
+        animation-delay: 1.5s;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+    }
+}
+
+@keyframes staranim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes movetwo {
+    from {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(7px, 4px);
+        -webkit-transform: translate(7px, 4px);
+        -moz-transform: translate(7px, 4px);
+        -ms-transform: translate(7px, 4px);
+        -o-transform: translate(7px, 4px);
+    }
+}
+
+@keyframes movethree {
+    from {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(-5px, 2px);
+        -webkit-transform: translate(-5px, 2px);
+        -moz-transform: translate(-5px, 2px);
+        -ms-transform: translate(-5px, 2px);
+        -o-transform: translate(-5px, 2px);
+    }
+}
+
+@keyframes movet {
+    from {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(-10px, -5px);
+        -webkit-transform: translate(-10px, -5px);
+        -moz-transform: translate(-10px, -5px);
+        -ms-transform: translate(-10px, -5px);
+        -o-transform: translate(-10px, -5px);
+    }
+}
+
+@keyframes boop {
+    from {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        -moz-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        -o-transform: scale(1.3);
+    }
+}
+
+.load-text-svg {
+    animation: lineartextsvg 0.1s linear forwards;
+    animation-delay: 0;
+    -webkit-animation: lineartextsvg 0.1s linear forwards;
+}
+
+.right-table-svg {
+    animation: movefour 3s ease-in-out alternate infinite;
+    -webkit-animation: movefour 3s ease-in-out alternate infinite;
+    -moz-animation: movefour 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+
+@keyframes movefour {
+    from {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(3px, -4px);
+        -webkit-transform: translate(3px, -4px);
+        -moz-transform: translate(3px, -4px);
+        -ms-transform: translate(3px, -4px);
+        -o-transform: translate(3px, -4px);
+    }
+}
+
+@keyframes lineartextsvg {
+    0% {
+        fill: none;
+    }
+    5% {
+        fill: url(#cl1);
+    }
+    10% {
+        fill: url(#cl2);
+    }
+    15% {
+        fill: url(#cl3);
+    }
+    20% {
+        fill: url(#cl4);
+    }
+    25% {
+        fill: url(#cl5);
+    }
+    30% {
+        fill: url(#cl6);
+    }
+    35% {
+        fill: url(#cl7);
+    }
+    40% {
+        fill: url(#cl8);
+    }
+    45% {
+        fill: url(#cl9);
+    }
+    50% {
+        fill: url(#cl10);
+    }
+    55% {
+        fill: url(#cl11);
+    }
+    60% {
+        fill: url(#cl12);
+    }
+    65% {
+        fill: url(#cl13);
+    }
+    70% {
+        fill: url(#cl14);
+    }
+    75% {
+        fill: url(#cl15);
+    }
+    80% {
+        fill: url(#cl16);
+    }
+    85% {
+        fill: url(#cl17);
+    }
+    90% {
+        fill: url(#cl18);
+    }
+    95% {
+        fill: url(#cl19);
+    }
+    100% {
+        fill: #e1e4e5;
+    }
+}
+
+.skobochki {
+    animation: movefive 3s ease-in-out alternate infinite;
+    -webkit-animation: movefive 3s ease-in-out alternate infinite;
+}
+
+.skobisvg {
+    stroke-dasharray: 121.84237670898438;
+    stroke-dashoffset: 121.84237670898438;
+    animation: skonidraw 2s alternate ease-out infinite;
+    -webkit-animation: skonidraw 2s alternate ease-out infinite;
+}
+
+@keyframes movefive {
+    from {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(4px, -4px);
+        -webkit-transform: translate(4px, -4px);
+        -moz-transform: translate(4px, -4px);
+        -ms-transform: translate(4px, -4px);
+        -o-transform: translate(4px, -4px);
+    }
+}
+
+@keyframes movesix {
+    from {
+        transform: translate(0px, 0px);
+        -webkit-transform: translate(0px, 0px);
+        -moz-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        -o-transform: translate(0px, 0px);
+    }
+
+    to {
+        transform: translate(-4px, 4px);
+        -webkit-transform: translate(-4px, 4px);
+        -moz-transform: translate(-4px, 4px);
+        -ms-transform: translate(-4px, 4px);
+        -o-transform: translate(-4px, 4px);
+    }
+}
+
+@keyframes skonidraw {
+    from {
+        stroke-dasharray: 122;
+    }
+
+    to {
+        stroke-dashoffset: 70;
+    }
+}
+
+// NON MAIN
+#wiglePoopFir {
+    animation: movet 3s ease-in-out alternate infinite;
+    -webkit-animation: movet 3s ease-in-out alternate infinite;
+    -moz-animation: movet 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+
+#wiglePoopSec {
+    animation: movetwo 3s ease-in-out alternate infinite;
+    -webkit-animation: movetwo 3s ease-in-out alternate infinite;
+    -moz-animation: movetwo 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+#circle1 {
+    animation: movetwo 3s ease-in-out alternate infinite;
+    -webkit-animation: movetwo 3s ease-in-out alternate infinite;
+    -moz-animation: movetwo 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+#stick1 {
+    animation: movefour 3s ease-in-out alternate infinite;
+    -webkit-animation: movefour 3s ease-in-out alternate infinite;
+    -moz-animation: movefour 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+#star1 {
+    opacity: 0;
+    animation: staranim 1s ease-in-out alternate infinite;
+    -webkit-animation: staranim 1s ease-in-out alternate infinite;
+    -moz-animation: staranim 1s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+#star2 {
+    opacity: 0;
+    animation: staranim 1s ease-in-out alternate infinite;
+    -webkit-animation: staranim 1s ease-in-out alternate infinite;
+    -moz-animation: staranim 1s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+    animation-delay: 1s;
+}
+#circle2 {
+    animation: movetwo 3s ease-in-out alternate infinite;
+    -webkit-animation: movetwo 3s ease-in-out alternate infinite;
+    -moz-animation: movetwo 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+#circle3 {
+    animation: movet 3s ease-in-out alternate infinite;
+    -webkit-animation: movet 3s ease-in-out alternate infinite;
+    -moz-animation: movet 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+#stick2 {
+    animation: movefour 3s ease-in-out alternate infinite;
+    -webkit-animation: movefour 3s ease-in-out alternate infinite;
+    -moz-animation: movefour 3s ease-in-out alternate infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+#star3 {
+    opacity: 0;
+    animation: staranim 1s ease-in-out alternate infinite;
+    -webkit-animation: staranim 1s ease-in-out alternate infinite;
+    -moz-animation: staranim 1s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+#star4 {
+    opacity: 0;
+    animation: staranim 1s ease-in-out alternate infinite;
+    -webkit-animation: staranim 1s ease-in-out alternate infinite;
+    -moz-animation: staranim 1s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+    animation-delay: 1s;
+}
+#star5 {
+    opacity: 0;
+    animation: staranim 1s ease-in-out alternate infinite;
+    -webkit-animation: staranim 1s ease-in-out alternate infinite;
+    -moz-animation: staranim 1s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+    animation-delay: 1.5s;
+}
+
+#wiglePoopThird {
+    animation: movet 3s ease-in-out alternate infinite;
+    -webkit-animation: movet 3s ease-in-out alternate infinite;
+    -moz-animation: movet 3s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}
+
+#star6 {
+    opacity: 0;
+    animation: staranim 1s ease-in-out alternate infinite;
+    -webkit-animation: staranim 1s ease-in-out alternate infinite;
+    -moz-animation: staranim 1s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+    animation-delay: 1.88s;
+}
+#stick3 {
+    animation: movet 3s ease-in-out alternate infinite;
+    -webkit-animation: movet 3s ease-in-out alternate infinite;
+    -moz-animation: movet 3s ease-in-out infinite;
+    transform-origin: 49% 49%;
+    transform-box: fill-box;
+}

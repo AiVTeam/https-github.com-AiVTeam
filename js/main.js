@@ -1,39 +1,47 @@
+$(document).ready(function () {
+    $("#inphone").mask("+7(999)999-9999");
 
-    var i = 0;   
-    var y = 0;
 
-    let textanimsvg =  setInterval(function(){
-        $('.rt-text-svg:eq(' + i +')').addClass('load-text-svg');
-        i++;
-        if(i===50){
-            clearInterval(textanimsvg);
-            while (i>=0){
-                $('.rt-text-svg:eq(' + i +')').removeClass('load-text-svg');
-                i--;
-            }
-            i = 0;
-        }
-    },150);
+$('form').submit(function(event){
 
-    setInterval(function(){
+    if ($('#inname') == "" ||$('#inemail') == "" || $('#inphone') == ""){
+        event.preventDefault();
+        alert('Введены некорректные данные')
+    }
 
-        textanimsvg =  setInterval(function(){
-            $('.rt-text-svg:eq(' + i +')').addClass('load-text-svg');
-            i++;
-            if(i===50){
-                clearInterval(textanimsvg);
-                while (i>=0){
-                    $('.rt-text-svg:eq(' + i +')').removeClass('load-text-svg');
-                    i--;
-                }
-                i = 0;
-            }
-        },150);
+    event.preventDefault();
 
-    }, 8000);
-   
+    $.ajax({
+        type: "POST",
+        URL: "php/mail.php",
+        data: $(this).serialize()
+    }).done(function () {
+        $(this).find("input").val("");
+        alert("Comlete!");
+        $("form").trigger("reset");
+      })
+    return false;
+});
+
     
-    
-    var path = document.querySelector('.skobisvg');
-    console.log(path.getTotalLength())
+  
+    $('a[href^="#"]').click(function () {
+      let valHref = $(this).attr("href");
+      $('html, body').animate({ scrollTop: $(valHref).offset().top });
+    });
+  
+  
+    $('#startProject').click(function () {
+      $('html, body').animate({ scrollTop: $('#feedback').offset().top });
+    });
+  
+    $('#learnMore').click(function () {
+      $('html, body').animate({ scrollTop: $('#meet').offset().top });
+    });
 
+    $(window).on('load', function () {
+      $('html, body').animate({ scrollTop: 0 });
+    });
+  
+ 
+});
