@@ -39,9 +39,9 @@ $(document).ready(function () {
     $('html, body').animate({ scrollTop: $('#meet').offset().top - $('.menu-wrap').outerHeight() });
   });
 
-  // $(window).on('load', function () {
-  //   $('html, body').animate({ scrollTop: 0 });
-  // });
+   $(window).on('load', function () {
+     $('html, body').animate({ scrollTop: 0 });
+  });
 
   $(window).scroll(() => {
     let scrollDistance = $(window).scrollTop();
